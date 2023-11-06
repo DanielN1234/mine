@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% set title="About Us" %}
+{% block d %} active-bar {% endblock %}
+{% block content %}
+
+
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/about.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/layout.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Lato&display=swap" rel="stylesheet">
+  
+  </head>
+  
+  <body>
+    <div class="outer">
+      <div class="inner">
+        <div class="left">
+          <h1 class="titles">Who are we?</h1>
+          <p class="description">Welcome to our CodeWizards Internship project: WizardType. 
+            WizardType is a typing game similar to another I will not name *cough cough* Typeracer. 
+            Over the course of 12 weeks, we created every aspect of this website, from the background image
+            to the typing test itself. Working with JavaScript, HTML, CSS, JQuery, and several databases, this
+            fully functioning typing application represents years of hard work and learning at CodeWizardsHQ.
+            Our team includes: Aberrash, Daniel, Joshua, Juliania, Kathleen, and Medhin. Our Boss, Nick,
+            is a wonderful and malevolent being who deserves much praise and respect (Josh wrote this). 
+            We hope you enjoy our site and have loads of fun with it :D</p>
+        </div>
+        <img class="right" src='/static/img/Logo1.png'>
+      </div>
+      <div class="inner">
+        <div class="AltR"></div>
+        <div class="AltL">
+          <h1 class="titles">What have we done?</h1>
+          <p class="description">nothing lol</p>
+        </div>
+      </div>
+      <div class="inner">
+        <div class="left">
+          <h1 class="titles">What is CodeWizards?</h1>
+          <p class="description">idk go check their website at www.codewizardshq.com</p>
+        </div>
+        <img class="right" src='/static/img/CWHQIcon.png'>
+      </div>
+    </div>
+  </body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,85 @@
+{% extends 'layout.html' %}
+{% set title="Home" %}
+{% block styles %}
+    <link href='{{url_for("static", filename="stylesheets/home.css")}}' rel='stylesheet'/>
+    <link href='{{url_for("static", filename="stylesheets/layout.css")}}' rel='stylesheet'/>
+{% endblock %}
+
+{% block content %}
+<!-- Update this block to update what html content is rendered -->
+<div class="top">
+  <div class="image-container">
+    <img id="WizFont1" src="/static/img/WizFont1.png">
+    </div>
+  <div class="image-container">
+  <img id="WizType" src="/static/img/WizType.png">
+  </div>
+  <div class="image-container">
+  <img id="WizFont" src="/static/img/WizFont.png">
+  </div>
+
+  <!-- <h2 class="description"> Made by cool people now</h2> ILL FIX THIS LATER PLEASE-->
+</div>
+
+<div class="bottom">
+    <div class="widget">
+      <form class="form" action="https://formsubmit.co/a032a96105a1c07632b456b9a61f36df" method="post">
+        <fieldset class="form-group">
+                  <legend>Create test</legend>
+        
+          <div class="mb-1">
+                    <label for="name">Number of words:</label>
+                    <input value="50" type="number" id="typeNumber" class="form-control" />
+                  </div>
+        
+        <div class="mb-1">
+                    <label for="name">Amount of time:</label>
+                    <input value="50" type="number" id="typeNumber" class="form-control" />
+              <input value="50" type="number" id="typeNumber" class="form-control" />
+                  </div>
+      
+        <label for="name">Difficulty level:</label>
+        <div class="difficulty">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+        <label class="form-check-label" for="exampleRadios1">
+            Easy (3 - 6 letter word)
+          </label>
+        </div>
+        
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option1" checked>
+        <label class="form-check-label" for="exampleRadios2">
+            Medium (3 - 9 letter word)
+          </label>
+        </div>
+        
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option1" checked>
+        <label class="form-check-label" for="exampleRadios3">
+            Hard (any word length)
+          </label>
+        </div>
+        
+        </div>
+        </form>
+      </div>
+
+<div class="widget">
+    <h3> widget 2</h3>
+</div>
+<div class="widget">
+    <h3> widget 3</h3>
+</div>
+</div>
+</div>
+
+
+{% endblock %}
+{% block brand %} active-bar {% endblock %}
+{% block scripts %}
+<!-- Delete the scripts block if not needed -->
+    <script src="{{ url_for('static', filename='javascript/home.js') }}">
+      
+    </script>
+{% endblock %}
